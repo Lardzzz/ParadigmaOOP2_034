@@ -12,3 +12,34 @@ public:
 	} 
 };
 
+class pekerja : public orang {
+public:
+
+	pekerja(int pUmur) :
+		orang(pUmur)
+	{
+		cout << "pekerja dibuat\n" << endl;
+	}
+};
+
+class pelajar : public orang {
+public:
+
+	pelajar(int pUmur) :
+		orang(pUmur)
+	{
+		cout << "pelajar dibuat\n" << endl;
+	}
+};
+
+class Budi : public pekerja, public pelajar {
+public:
+
+	Budi(int pUmur) :
+		pekerja(pUmur),
+		pelajar(pUmur)
+	{
+		cout << "Budi dibuat\n" << endl;
+	}
+};
+
