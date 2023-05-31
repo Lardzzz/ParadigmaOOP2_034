@@ -38,3 +38,8 @@ int main() {
 	orang->pesan();
 	orang = &b;
 	orang->pesan();
+	//a.seseorang::pesanpesan(); //memanggil method yang berada di class seseorang
+	//b.seseorang::pesan();
+
+	return 0;
+}
