@@ -43,3 +43,8 @@ public:
 	}
 };
 
+int main() {
+	Budi(12);
+
+	return 0;
+}
